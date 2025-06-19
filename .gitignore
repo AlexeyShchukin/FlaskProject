@@ -1,5 +1,8 @@
 .venv/
 .idea/
-.env
+.env.local
 __pycache__/
 pytest_cache/
+.env
+.env.stage
+.env.production

@@ -7,7 +7,8 @@ class DBConnector:
         self.Session = sessionmaker(bind=engine)
 
     def __enter__(self):
-            self.session = self.Session()
+        self.session = self.Session()
+        return self.session
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.session.close()
